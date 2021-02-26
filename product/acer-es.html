@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<meta name=description content="">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<script src="../js/jquery-3.1.1.min.js" type="text/javascript"></script> <!-- jQuery -->
+	<link rel="icon" type="image/png" href="../images/favico.png"> <!-- icon -->
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css"> <!-- reset css -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css"> <!-- css -->
+
+	<link rel="stylesheet" type="text/css" href="../css/box.css"> <!-- css -->
+	<link rel="stylesheet" type="text/css" href="../css/slideshow.css"> <!-- css -->
+
+	<link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
+
+	<title>Website Bán Hàng Trực Tuyến</title>
+</head>
+<body>
+
+<div class="top-bar">
+	<div class="wrapper">
+		<div class="logo"><a href="../index.html"><img src="../images/logo.svg" alt=""></a></div>
+		<div class="search">
+			<input id="tbxSearch" type="text" name="" placeholder="Tìm kiếm sản phẩm..." autocomplete="off">
+			<button id="btnSearch"></button>
+		</div>
+		<div class="top-menu">
+			<ul>
+			    <li><a href="../index.html">Trang chủ</a></li>
+			    <li><a href="">Giới thiệu</a></li>
+			    <li><a href="../contact.html">Liên hệ</a></li>
+			    <li><a id="lnkLogin">Đăng nhập</a></li>
+			    <li><a id="lnkRegister">Đăng ký</a></li>
+			</ul>
+		</div>
+	</div>
+</div> <!-- end TOP-BAR -->
+
+<div class="main">
+
+	<div class="sidebar">
+		<div class="container">
+		<div id="browserInfo"></div>
+			<h3 class="title blue">Danh mục sản phẩm</h3>
+			<ul class="menu">
+			    <li class="sub"><a href="../category/dien-thoai.html">Điện thoại</a>
+			    	<ul class="sub-menu">
+				    	<li><a href="#">Apple</a></li>
+				        <li><a href="#">Samsung</a></li>
+				        <li><a href="#">BKAV</a></li>
+				        <li><a href="#">HTC</a></li>
+				        <li><a href="#">Sony</a></li>
+				        <li><a href="#">Xiaomi</a></li>
+				        <li><a href="#">Oppo</a></li>
+				        <li><a href="#">Asus</a></li>
+				        <li><a href="#">Nokia</a></li>
+				        <li><a href="#">Microsoft</a></li>
+				        <li><a href="#">Google</a></li>
+					</ul>
+			    </li>
+			    <li class="sub"><a href="../category/laptop.html">Laptop</a>
+			    	<ul class="sub-menu">
+				    	<li><a href="#">HP</a></li>
+				        <li><a href="#">Acer</a></li>
+				        <li><a href="#">Asus</a></li>
+				        <li><a href="#">Samsung</a></li>
+				        <li><a href="#">Sony</a></li>
+				        <li><a href="#">Dell</a></li>
+					</ul>
+			    </li>
+			    <li class="sub"><a href="">Máy ảnh</a>
+			    	<ul class="sub-menu">
+				    	<li><a href="#">Canon</a></li>
+				        <li><a href="#">Panasonic</a></li>
+				        <li><a href="#">Kodak</a></li>
+				        <li><a href="#">Samsung</a></li>
+				        <li><a href="#">Sony</a></li>
+					</ul>
+			    </li>
+			    <li><a href="">Tai nghe</a></li>
+			    <li><a href="">Loa</a></li>
+			    <li class="sub"><a href="">SSD</a>
+			    	<ul class="sub-menu">
+				    	<li><a href="#">Kingston</a></li>
+				        <li><a href="#">Samsung</a></li>
+					</ul>
+			    </li>
+			    <li class="sub"><a href="">CPU</a>
+			    	<ul class="sub-menu">
+				    	<li><a href="#">core i7</a></li>
+				        <li><a href="#">core i5</a></li>
+				        <li><a href="#">core i3</a></li>
+					</ul>
+			    </li>
+			    <li><a href="">Card đồ họa</a></li>
+			    <li><a href="">Phụ kiện</a></li>
+
+			</ul>
+		</div>
+		<div class="container">
+			<h3 class="title blue">Sản phẩm khác</h3>
+			<ul class="menu">
+				<li class="sub"><a href="">USB 3.1</a>
+					<ul class="sub-menu">
+				    	<li><a href="#">USB 3.1 16GB</a></li>
+				        <li><a href="#">USB 3.1 32GB</a></li>
+				        <li><a href="#">USB 3.1 64GB</a></li>
+					</ul>
+				</li>
+			    <li class="sub"><a href="">USB 3.0</a>
+			    	<ul class="sub-menu">
+				    	<li><a href="#">USB 3.0 16GB</a></li>
+				        <li><a href="#">USB 3.0 32GB</a></li>
+				        <li><a href="#">USB 3.0 64GB</a></li>
+					</ul>
+			    </li>
+			    <li class="sub"><a href="">USB 2.0</a>
+			    	<ul class="sub-menu">
+				    	<li><a href="#">USB 2.0 2GB</a></li>
+				        <li><a href="#">USB 2.0 8GB</a></li>
+				        <li><a href="#">USB 2.0 16GB</a></li>
+					</ul>
+			    </li>
+			    <li><a href="">RAM</a></li>
+			    <li class="sub"><a href="">Bàn phím cơ</a>
+			    	<ul class="sub-menu">
+				    	<li><a href="#">Razer</a></li>
+				        <li><a href="#">Corsair</a></li>
+				        <li><a href="#">Logitech</a></li>
+					</ul>
+			    </li>
+			    <li><a href="">Chuột</a></li>
+			    <li><a href="">Ổ cứng di động</a></li>
+			    <li><a href="">Ổ SSD di động</a></li>
+			    <li><a href="">Máy nghe nhạc</a></li>
+			    <li><a href="">Đầu đọc thẻ nhớ</a></li>
+			    <li><a href="">Phụ kiện di động</a></li>
+			</ul>
+		</div>
+	</div> <!-- end SIDEBAR -->
+
+	<div class="content">
+		<div class="container">
+			<h3 class="title white right">Laptop Acer ES1</h3>
+			<div class="product">
+				<div class="product-photo">
+					<div class="product-slideshow">
+						<div class="mySlides fade">
+							<img src="../images/product/acer-1.png" style="width:100%">
+						</div>
+						<div class="mySlides fade">
+							<img src="../images/product/acer-2.png" style="width:100%">
+						</div>
+						<div class="mySlides fade">
+							<img src="../images/product/acer-3.jpg" style="width:100%">
+						</div>
+						<div class="mySlides fade">
+							<img src="../images/product/acer-4.jpg" style="width:100%">
+						</div>
+					</div>
+
+					<div class="list-img">
+						<img src="../images/product/acer-1.png" onclick="currentSlide(0)">
+						<img src="../images/product/acer-2.png" onclick="currentSlide(1)">
+						<img src="../images/product/acer-3.jpg" onclick="currentSlide(2)">
+						<img src="../images/product/acer-4.jpg" onclick="currentSlide(3)">
+					</div>
+				</div>
+
+				<div class="product-detail">
+					<h3 class="prices">15.900.000 VND</h3>
+					<h3 class="tieude">Thông tin</h3>
+					<ul class="thong-tin">
+					    <li>Trong hộp có: Pin, Dây nguồn, Sách hướng dẫn, Adapter sạc</li>
+					    <li>Bảo hành chính hãng: thân máy 12 tháng, pin 12 tháng, sạc 12 tháng</li>
+					    <li>Giao hàng tận nơi miễn phí trong 30 phút</li>
+					    <li>1 đổi 1 trong 1 tháng với sản phẩm lỗi</li>
+					</ul>
+
+					<h3 class="ttieude">Thông số kỹ thuật</h3>
+					<ul class="thong-so">
+					    <li>CPU: Intel, Celeron, N3060, 1.60 GHz</li>
+					    <li>RAM: DDR3L (1 khe RAM), 4 GB, 1600 MHz</li>
+					    <li>Đĩa cứng: HDD, 500 GB</li>
+					    <li>Màn hình rộng: 14 inch, HD (1366 x 768 pixels)</li>
+					    <li>Cảm ứng: Không</li>
+					    <li>Đồ họa:	Intel® HD Graphics, Share (Dùng chung bộ nhớ với RAM)</li>
+					    <li>Đĩa quang: Không</li>
+					    <li>Webcam:	0.3 MP</li>
+					    <li>Chất liệu vỏ: Vỏ nhựa</li>
+					    <li>Cổng giao tiếp:	HDMI, LAN (RJ45), USB 2.0, USB 3.0</li>
+					</ul>
+					<button class="red">Đặt hàng ngay</button>
+					<button class="blue">Mua trả góp</button>
+				</div>
+			</div>
+			<div class="bai-gioi-thieu">
+				<h3>Cấu hình phù hợp với các chương trình nhẹ nhàng</h3>
+				<p>Máy sử dụng chip xử lý Celeron để đảm bảo giá thành tốt, RAM 4 GB là điểm sáng giúp máy vận hành không quá chậm, bạn có thể nâng cấp lên tối đa 8 GB.</p>
+				<p>Ổ cứng HDD 500 GB thoải mái lưu trữ dữ liệu.</p>
+				<center><img src="../images/log/acer-es1-431-n3060-4gb-500gb-win10--5.jpg" alt=""></center>
+				<h3>Màn hình 14 inch</h3>
+				<p>Cùng với đó là công nghệ Active Matrix TFT Colour LCD cho độ sáng và màu sắc đẹp hơn.</p>
+				<center><img src="../images/log/acer-es1-431-n3060-4gb-500gb-win10--2.jpg" alt=""></center>
+				<h3>Thiết kế cụm bàn phím số thông minh</h3>
+				<p>Thích hợp với các bạn hay làm việc thường xuyên với các con số như kế toán, giáo viên...
+				<br>Để sử dụng, bạn ấn nút Fn + vị trí đặt phím số.</p>
+				<center><img src="../images/log/acer-es1-431-n3060-4gb-500gb-win10--77.gif" alt=""></center>
+				<h3>Touchpad đa cách sử dụng</h3>
+				<center><img src="../images/log/acer-es1-431-n3060-4gb-500gb-win10--8.jpg" alt=""></center>
+				<h3>Các cổng kết nối</h3>
+				<center><img src="../images/log/acer-es1-431-n3060-4gb-500gb-win10--9.jpg" alt=""></center>
+			</div>
+		</div> <!-- end CONTAINER -->
+	</div> <!-- end CONTENT -->
+
+	<div class="clearfix"></div>
+
+</div> <!-- end MAIN -->
+
+<div class="footer">
+	<div class="bot-bar">
+		<div class="wrapper">
+			<div class="row">
+				<div class="col">
+					<h3>Thông tin</h3>
+					<ul class="list-menu">
+					    <li><a href="">Mua hàng online</a></li>
+			  		    <li><a href="">Trả góp</a></li>
+			  		    <li><a href="">Thông tin khuyến mãi</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<h3>Chính sách</h3>
+					<ul class="list-menu">
+			  		    <li><a href="">Đổi trả</a></li>
+			  		    <li><a href="">Bảo hành</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<h3>Khách hàng</h3>
+					<ul class="list-menu">
+			  		    <li><a href="">Quy định sử dụng</a></li>
+			  		    <li><a href="">Bảo mật thông tin</a></li>
+			  		    <li><a href="">Hướng dẫn đăng ký</a></li>
+			  		    <li><a href="">Hướng dẫn thanh toán</a></li>
+			  		</ul>
+				</div>
+				<div class="col">
+					<h3>Liên hệ</h3>
+					<ul class="list-menu">
+					    <li>Hotline: <b>(+84)1698.508.155</b></li>
+			  		    <li>E-mail: <b><a href="">tanphongtr@gmail.com</a></b></li>
+			  		    <li>ABC Đồng Khởi, Phú Tân, tp. Bến Tre</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<div class="wrapper">
+			<span>TANPHX &copy; 2016</span>
+			<span>Design by Tanphong Tran</span>
+		</div>
+	</div>
+</div> <!-- end FOOTER -->
+
+
+<!-- ========= CÁC THÀNH CỐ ĐỊNH / ẨN ========= -->
+<!-- Icon mạng xã hội -->
+<div id="fixedsocial">
+    <a href="//www.facebook.com/tanphongtr" target="_blank"><div class="facebookflat"></div></a>
+    <a href="//www.twitter.com/tanphongtr" target="_blank"><div class="twitterflat"></div></a>
+    <a href="//www.youtube.com/channel/UCK351jr46IEg85TvmsG1BPQ" target="_blank"><div class="youtubeflat"></div></a>
+</div>
+
+<!-- back-to-top -->
+<div id="back-to-top" title="Lên đầu trang"></div>
+
+<!-- Form đăng ký -->
+<div id="myModal" class="modal">
+
+  <div class="modal-content register">
+  	<div class="modal-wrap">
+	    <div class="modal-header">
+	      <span class="close">&times;</span>
+	      <h3>Đăng ký tài khoản</h3>
+	    </div>
+	    <div class="modal-body">
+	    	<strong id="warning">&nbsp;</strong>
+	    	<form>
+	    		<label for="fullname">Họ tên: </label>
+				<div class="row"><input type="text" name="fullname" id="fullname" autocomplete="off"></div>
+
+				<label for="username">Tên đăng nhập: </label>
+				<div class="row"><input type="text" name="username" id="username" autocomplete="off"></div>
+
+				<label for="password">Mật khẩu: </label>
+				<div class="row"><input type="password" name="password" id="password" autocomplete="off"></div>
+
+				<label for="repassword">Gõ lại mật khẩu: </label>
+				<div class="row"><input type="password" name="repassword" id="repassword" autocomplete="off"></div>
+
+				<label for="email">Email: </label>
+				<div class="row"><input type="text" name="email" id="email" autocomplete="off"></div>
+
+				<label for="phone">Số điện thoại: </label>
+				<div class="row"><input type="text" name="phone" id="phone" autocomplete="off"></div>
+
+	    		<div class="row">
+	    			<input type="button" class="btnreg" name="" value="Đăng ký" onClick="check(this.form.fullname.value, this.form.username.value, this.form.password.value, this.form.repassword.value, this.form.email.value, this.form.phone.value)">
+	    		</div>
+	    	</form>
+	    </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ============== CHÈN FILE js ============== -->
+<script src="../js/slideshow.js" type="text/javascript"></script> <!-- slideshow -->
+<script src="../js/jquery.sticky-kit.js" type="text/javascript"></script> <!-- neo sidebar -->
+<script src="../js/giaodien.js" type="text/javascript"></script> <!-- hiệu ứng giao diện -->
+<script src="../js/check-form.js" type="text/javascript"></script> <!-- kiểm tra nhập -->
+<script type="text/javascript" src="../slick/slick.min.js"></script>
+</body>
+</html>

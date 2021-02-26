@@ -1,0 +1,213 @@
+@media only screen and (max-width: 1120px) {
+    #fixedsocial {
+        display: none !important;
+    }
+}
+
+#fixedsocial {
+    top: 25%;
+    height: 135px;
+    width: 45px;
+    position: fixed;
+    left: 0;
+    z-index: 5;
+}
+
+.facebookflat {
+	background-color: #3A559F;
+	background-image: url("../images/facebook-letter-logo.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 45px;
+	width: 45px;
+	transition: ease 500ms;
+	background-size: 24px;
+	opacity: 1;
+}
+
+.facebookflat:hover {
+    transition: ease 500ms;
+    margin-right: -20px;
+    width: 70px;
+}
+
+.twitterflat {
+	background-color: #50ABF1;
+    background-image: url("../images/twitter.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+	height: 45px;
+	width: 45px;
+    transition: ease 500ms;
+    background-size: 24px;
+    opacity: 1;
+}
+
+.twitterflat:hover {
+    transition: ease 500ms;
+    margin-right: -20px;
+    width: 70px;
+}
+
+
+.youtubeflat {
+	background-color: #DC472E;
+    background-image: url("../images/youtube-logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+	height: 45px;
+	width: 45px;
+    transition: ease 500ms;
+    background-size: 24px;
+    opacity: 1;
+}
+
+.youtubeflat:hover {
+    transition: ease 500ms;
+    margin-right: -20px;
+    width: 70px;
+}
+
+
+#back-to-top {
+    display: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    right: 0;
+    bottom: 0;
+    margin: 5px;
+    position: fixed;
+
+    color: #fff;
+    text-align: center;
+
+    background-image: url(../images/up-arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-color: rgba(27, 27, 27, 0.5);
+
+    cursor: pointer;
+}
+
+#back-to-top:hover {
+    background-color: rgba(27, 27, 27, 1);
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 5; /* Sit on top */
+    padding-top: 0; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: absolute;
+    margin: auto;
+    padding: 0;
+    top: 0; right: 0;
+    bottom: 0; left: 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border: 14px solid rgba(0,0,0,0.6);
+    border-radius: 5px;
+}
+
+.modal-wrap {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.register {
+    width: 400px;
+    height: 550px;
+}
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from { top:-300px; opacity:0 } 
+    to { top:0; opacity:1 }
+}
+
+@keyframes animatetop {
+    from { top:-300px; opacity:0 }
+    to { top: 0; opacity: 1 }
+}
+
+/* The Close Button */
+.close {
+    color: #fff;
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 20px 30px;
+    background-color: #003780;
+    color: #fff;
+}
+
+.modal-body {
+    padding: 20px 50px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+#lnkRegister, #lnkLogin {
+    cursor: pointer;
+}
+
+.modal-body .row {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.modal-body .row:last-child {
+    margin: 20px 0;
+}
+
+.modal-body strong {
+    color: #A70C00;
+}
+
+.modal-body form {
+    margin-top: 10px;
+}
+
+.modal-body .row input {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+}
